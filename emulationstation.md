@@ -4,12 +4,5 @@ EmulationStation has [very thorough documentation](https://github.com/Aloshi/Emu
 
 ```
 sudo yum -y groupinstall "Development Tools"
-sudo yum -y install \
-cmake cmake-fedora \
-gcc gcc-c++ \
-freeimage-devel \
-SDL2-devel \
-boost-devel \
-eigen3-devel \
-libcurl-devel
+sudo yum -y install cmake cmake-fedora gcc gcc-c++ freeimage-devel SDL2-devel boost-devel eigen3-devel libcurl-devel
 ```
