@@ -1,10 +1,6 @@
 # Easily install Chrome on Fedora 22
 
-For some reason, Google Chrome is kind of a pain in the butt to install on 
-Fedora, and then another pain in the butt to make it not have two icons in your 
-dock. Let's fix that. Just open a Terminal (no, you don't need to be root) and 
-paste these lines in to get pain-free Google Chrome. After you run this, press 
-Alt+F2 and type "r" to make GNOME update.
+For some reason, Google Chrome is kind of a pain in the butt to install on Fedora, and then another pain in the butt to make it not have two icons in your dock. Let's fix that. Just open a Terminal (no, you don't need to be root) and paste these lines in to get pain-free Google Chrome. After you run this, press Alt+F2 and type "r" to make GNOME update.
 
 ```
 cat << EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
@@ -21,11 +17,7 @@ sudo sed -i.bak '/\[Desktop Entry\]/a StartupWMClass=Google-chrome-stable' /usr/
 
 After Chrome updates, you might find that it regresses and Chrome has two icons in your dock again. When that happens, simply run the last command from above.
 
-# How it works
+## How it works
 
-If you're curious, here's an explanation. The first 8 lines add the official 
-Google Chrome repository to Yum's list of repositories. The penultimate line 
-then installs Google Chrome using Yum. The last line edits Chrome's .desktop 
-file (which is the file that adds Google Chrome to your application launcher) 
-to fix an issue where Chrome would launch as "Google-chrome-stable" and you'd 
-have two different icons in your dock and it just looked silly.
+If you're curious, here's an explanation. The first 8 lines add the official Google Chrome repository to Yum's list of repositories. The penultimate line then installs Google Chrome using Yum. The last line edits Chrome's .desktop 
+file (which is the file that adds Google Chrome to your application launcher) to fix an issue where Chrome would launch as "Google-chrome-stable" and you'd have two different icons in your dock and it just looked silly.
