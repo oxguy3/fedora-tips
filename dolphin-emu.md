@@ -2,11 +2,11 @@
 
 Dolphin Emulator is a really great emulator for GameCube and Wii games, but they only distribute official builds for Windows, OS X, and Ubuntu. To get it running on Fedora, you'll have to download the source code and build it yourself.
 
-This guide was written based on [the official readme](https://github.com/dolphin-emu/dolphin/blob/master/Readme.md#building-for-linux-and-os-x) (as well as [the official wiki page on building Dolphin](https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux)) and tested on Dolphin 5.0-rc-25. It may become outdated in time, but will probably remain generally accurate (the dependencies list will probably become outdated gradually, for example, but you should be able to get at least _most_ of them this way).
+This guide was written based on [the official readme](https://github.com/dolphin-emu/dolphin/blob/master/Readme.md#building-for-linux-and-os-x) (as well as [the official wiki page on building Dolphin](https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux)) and tested on Dolphin 5.0-rc-25.
 
 ## Get the dependencies
 
-Here are all the dependencies I found I needed. You can actually remove the non-devel versions of pretty much anything that has a "devel" version.
+Here are all the dependencies I discovered I needed. It's possible that I missed some (because I already had them) or that Dolphin will add new dependencies and this list will become outdated, but this should at least cover most of them.
 
 ```
 sudo yum -y groupinstall "Development Tools"
@@ -29,7 +29,7 @@ This will get the very latest code, which will probably be a bit unstable. I'd r
 
 ```
 cd dolphin-emu
-git checkout yourCommithash .
+git checkout YOUR_COMMIT_HASH_GOES_HERE .
 ```
 
 This will rollback your local copy of the code to the release you selected.
