@@ -24,7 +24,7 @@ sudo yum update
 
 ## Install Fedy
 
-Fedy is a tool for installing lots of little bits of useful software that aren't necessarily available via easier means. Use it to install Chrome, Steam, Skype, Java, text editors, IDEs, and other software and tweaks. Here's the command:
+Fedy is a tool for installing lots of little bits of useful software that aren't necessarily available via easier means. Use it to install Chrome, Steam, Skype, Java, Adobe Flash, text editors, IDEs, and other software and tweaks. Here's the command:
 
 ```
 bash -c 'su -c "curl https://satya164.github.io/fedy/fedy-installer -o fedy-installer && chmod +x fedy-installer && ./fedy-installer"'
@@ -65,9 +65,21 @@ Lastly, open Tweak Tool. Go to the Fonts section and set Hinting to "Slight" and
 
 Fedora ships with a set of free graphics drivers called Nouveau. They get the job done, but if you want to play games or otherwise utilize a powerful graphics card, you'll want to get the drivers from your GPU's manufacturer. For my NVIDIA drivers, [this tutorial was a godsend](https://kaischroed.wordpress.com/howto-install-nvidia-driver-on-fedora-replacing-nouveau/) ([archived version if link goes down](https://archive.is/M2deU)).
 
+## Video software
+
+For watching any sort of video content, you'll probably want to install VLC:
+
+```
+sudo yum install vlc
+```
+
+You also may want to use Fedy to install Multimedia codecs to support lots of file types.
+
 ## Other applications
 
 Here are a couple easy-to-install applications you might want:
 
-* YumEx: a graphical interface for Yum (nice if you aren't comfortable on the command line): `sudo yum install yumex`
+* GIMP: powerful photo-editing software (good replacement for Adobe Photoshop): `sudo yum install gimp`
+* Inkscape: vector image editing software (good replacement for Adobe Illustrator): `sudo yum install inkscape` 
 * Wine: allows you to run Windows-only applications on Linux: `sudo yum install wine`
+* YumEx: a graphical interface for Yum (nice if you aren't comfortable on the command line): `sudo yum install yumex`
