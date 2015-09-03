@@ -1,12 +1,11 @@
 # Dolphin Emulator dependencies on Fedora
 So you want to build Dolphin emulator on Fedora huh? Here's a big
-ole command. There are build instructions here:
-
-https://github.com/dolphin-emu/dolphin/blob/master/Readme.md#building-for-linux-and-os-x
+ole command. There are build instructions [here](https://github.com/dolphin-emu/dolphin/blob/master/Readme.md#building-for-linux-and-os-x).
 
 That link doesn't detail all the dependencies you'll need. Here's the
 list I built up:
 
+```
 sudo yum -y groupinstall "Development Tools"
 sudo yum -y install \
 cmake cmake-fedora \
@@ -31,6 +30,7 @@ SOIL SOIL-devel \
 miniupnpc miniupnpc-devel \
 wxGTK wxGTK-devel \
 gtk2 gtk2-devel
+```
 
 A lot of these are optional, but unless you're strapped for space, it's
 probably best to build the most complete version of Dolphin possible. You
