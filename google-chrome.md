@@ -1,6 +1,6 @@
 # Easily install Chrome on Fedora 22
 
-Getting Chrome should be one of the easiest tasks ever, but it's not. This document aims to fix that
+Getting Chrome should be one of the easiest tasks ever, but it's not. This document aims to fix that.
 
 ## Installing Chrome
 
