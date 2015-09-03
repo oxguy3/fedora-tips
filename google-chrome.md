@@ -1,10 +1,10 @@
-# Easily install Chrome on Fedora 22
+# Easily install Google Chrome on Fedora 22
 
 Getting Chrome should be one of the easiest tasks ever, but it's not. This document aims to fix that.
 
 ## Installing Chrome
 
-If you have [Fedy](https://satya164.github.io/fedy/) installed, you can use it to install Chrome. If you don't have Fedy, you can just paste this into your terminal (you don't need root):
+If you have [Fedy](https://satya164.github.io/fedy/) installed, you can just open it, find Google Chrome, and click Install. If you don't have Fedy, you can just paste this into your terminal (you don't need root):
 
 ```
 cat << EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
@@ -20,7 +20,7 @@ sudo yum -y install google-chrome-stable
 
 This command adds the official Google Chrome repository to your Yum repository list, and then installs Chrome with Yum.
 
-## Fixing two icons
+## Fixing the 'double icons' issue
 
 Chrome's official Fedora releases have a bug in them that causes Chrome to appear twice in your dock. You'll have "Google Chrome" in your favorites, but when you click it, it'll launch as a separate icon labeled "Google-chrome-stable". Here's a really simple command that can fix this (you may also need to re-run this after updating Chrome):
 
