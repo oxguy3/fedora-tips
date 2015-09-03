@@ -4,7 +4,7 @@ Here are some things you'll need to do if you want to run Fedora with a monitor 
 
 ## Replacing the video drivers
 
-Fedora ships with a set of free graphics drivers called Nouveau. They get the job done, but as far as I can tell, they refuse to work. For my NVIDIA drivers, [this tutorial was a godsend](https://kaischroed.wordpress.com/howto-install-nvidia-driver-on-fedora-replacing-nouveau/) ([archived version if link goes down](https://archive.is/M2deU)).
+Fedora ships with a set of free graphics drivers called Nouveau. They get the job done, but as far as I can tell, they refuse to work at anything above 1080p. For my NVIDIA drivers, [this tutorial was a godsend](https://kaischroed.wordpress.com/howto-install-nvidia-driver-on-fedora-replacing-nouveau/) ([archived version if link goes down](https://archive.is/M2deU)).
 
 ## HiDPI scaling
 
