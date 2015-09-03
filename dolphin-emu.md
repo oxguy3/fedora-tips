@@ -32,8 +32,4 @@ wxGTK wxGTK-devel \
 gtk2 gtk2-devel
 ```
 
-A lot of these are optional, but unless you're strapped for space, it's
-probably best to build the most complete version of Dolphin possible. You
-also probably have a lot of these; I was pretty thorough in some cases.
-You may also need to have the RPMFusion repositories on your system to
-get some of these.
+I kinda went overboard here; you probably don't need most of the non-devel versions of anything that has a devel equivalent (mea culpa).
