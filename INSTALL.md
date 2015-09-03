@@ -67,7 +67,7 @@ Lastly, open Tweak Tool. Go to the Fonts section and set Hinting to "Slight" and
 
 ## Install propreitary graphics drivers
 
-Fedora ships with a set of free graphics drivers called Nouveau. They get the job done, but if you want to play games or otherwise utilize a powerful graphics card, you'll want to get the drivers from your GPU's manufacturer. For my NVIDIA drivers, [this tutorial was a godsend](https://kaischroed.wordpress.com/howto-install-nvidia-driver-on-fedora-replacing-nouveau/) ([archived version if link goes down](https://archive.is/M2deU)).
+Fedora ships with a set of free graphics drivers called Nouveau. They get the job done, but if you want to play games or otherwise utilize a powerful graphics card, you'll want to get the drivers from your GPU's manufacturer. For my NVIDIA drivers, [this tutorial was a godsend](https://kaischroed.wordpress.com/howto-install-nvidia-driver-on-fedora-replacing-nouveau/) ([archived version if link goes down](https://archive.is/M2deU)). Those instructions do involve booting your computer into text-only mode, so make sure you print them or have them open on a different device than the machine you're working on.
 
 ## Get video software
 
