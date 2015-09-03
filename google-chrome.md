@@ -1,6 +1,10 @@
 # Easily install Chrome on Fedora 22
 
-For some reason, Google Chrome is kind of a pain in the butt to install on Fedora, and then another pain in the butt to make it not have two icons in your dock. Let's fix that. Just open a Terminal (no, you don't need to be root) and paste these lines in to get pain-free Google Chrome. After you run this, press Alt+F2 and type "r" to make GNOME update.
+Getting Chrome should be one of the easiest tasks ever, but it's not. This document aims to fix that
+
+## Installing Chrome
+
+If you have [Fedy](https://satya164.github.io/fedy/) installed, you can use it to install Chrome. If you don't have Fedy, you can just paste this into your terminal (you don't need root):
 
 ```
 cat << EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
@@ -12,12 +16,16 @@ gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 EOF
 sudo yum -y install google-chrome-stable
+```
+
+This command adds the official Google Chrome repository to your Yum repository list, and then installs Chrome with Yum.
+
+## Fixing two icons
+
+Chrome's official Fedora releases have a bug in them that causes Chrome to appear twice in your dock. You'll have "Google Chrome" in your favorites, but when you click it, it'll launch as a separate icon labeled "Google-chrome-stable". Here's a really simple command that can fix this (you may also need to re-run this after updating Chrome):
+
+```
 sudo sed -i.bak '/\[Desktop Entry\]/a StartupWMClass=Google-chrome-stable' /usr/share/applications/google-chrome.desktop
 ```
 
-After Chrome updates, you might find that it regresses and Chrome has two icons in your dock again. When that happens, simply run the last command from above.
-
-## How it works
-
-If you're curious, here's an explanation. The first 8 lines add the official Google Chrome repository to Yum's list of repositories. The penultimate line then installs Google Chrome using Yum. The last line edits Chrome's .desktop 
-file (which is the file that adds Google Chrome to your application launcher) to fix an issue where Chrome would launch as "Google-chrome-stable" and you'd have two different icons in your dock and it just looked silly.
+GNOME may take a little while to notice that you've done this. If you want to make GNOME update immediately, press Alt+F2, type "r", and press enter; this will make GNOME reset itself.
