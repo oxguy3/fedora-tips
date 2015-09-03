@@ -36,7 +36,7 @@ This will rollback your local copy of the code to the release you selected.
 
 ## Build the application
 
-Now you need to compile to code into a build.
+Now you need to compile the code into a build.
 
 ```
 mkdir Build
