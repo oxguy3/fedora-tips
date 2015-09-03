@@ -29,3 +29,9 @@ sudo sed -i.bak '/\[Desktop Entry\]/a StartupWMClass=Google-chrome-stable' /usr/
 ```
 
 GNOME may take a little while to notice that you've done this. If you want to make GNOME update immediately, press Alt+F2, type "r", and press enter; this will make GNOME reset itself.
+
+### How this works
+
+GNOME (which is your desktop environment software) uses `.desktop` config files to specify how applications in your dock and application list should look and act. If you have an app that launches itself with a different name than GNOME expects it to, GNOME won't realize it's actually the same app. This command adds a property to the `google-chrome.desktop` file that says "hey, 'Google-chrome-stable' is actually just the name that 'Google Chrome' launches itself as. they're the same thing!".
+
+The command also saves the original `google-chrome.desktop` file as `google-chrome.desktop.bak`, in case for some reason you want to revert.
