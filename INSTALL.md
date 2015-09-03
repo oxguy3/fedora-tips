@@ -6,6 +6,10 @@ So you've just done a clean install of Fedora 22. Let's get started making your 
 
 If you haven't already set a root password, you're probably going to need it for at least a couple things. Change it using `sudo passwd`. This is the most critical password on your machine (and not something you'll need to use very often), so make it pretty strong and secure.
 
+## Rename your machine
+
+By default, new Fedora installs name the PC "localhost", which is boring and dumb. Open the Settings app, go to Details, and type in a new device name. (and god, please not "firstname-pc"; get creative with it!)
+
 ## Add RPMFusion repositories
 
 Fedora's official repositories let you install a lot with YUM, but they're also missing a lot. RPMFusion is the crucial third-party source for all the stuff the official repos are missing. This command will install both RPMFusion repos (free and non-free) for your version of Fedora:
