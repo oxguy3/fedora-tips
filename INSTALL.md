@@ -2,10 +2,6 @@
 
 So you've just done a clean install of Fedora 22. Let's get started making your OS more homey (most of these steps are optional and up to your discretion).
 
-## Take control of root
-
-If you haven't already set a root password, you're probably going to need it for at least a couple things. Change it using `sudo passwd`. This is the most critical password on your machine (and not something you'll need to use very often), so make it pretty strong and secure.
-
 ## Rename your machine
 
 By default, new Fedora installs name the PC "localhost", which is boring and dumb. Open the Settings app, go to Details, and type in a new device name. (and god, please not "firstname-pc"; get creative with it!)
