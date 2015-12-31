@@ -27,7 +27,7 @@ sudo yum update
 Fedy is a tool for installing lots of little bits of useful software that aren't necessarily available via easier means. Use it to install Chrome, Steam, Skype, Java, Adobe Flash, text editors, IDEs, and other software and tweaks. Here's the command:
 
 ```
-bash -c 'su -c "curl https://satya164.github.io/fedy/fedy-installer -o fedy-installer && chmod +x fedy-installer && ./fedy-installer"'
+bash -c 'su -c "curl http://folkswithhats.org/fedy-installer -o fedy-installer && chmod +x fedy-installer && ./fedy-installer"'
 ```
 
 Fedy is a GUI application, and thus can be launched from the application list.
